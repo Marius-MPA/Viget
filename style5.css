@@ -1,0 +1,682 @@
+body, html {
+    margin:0;
+    padding:0;
+    font-family: 'Oswald', sans-serif;
+    background-image: url('gravel.png');
+}
+header {
+    
+    width: 100%;
+}
+.black_line {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: 50px;  
+}
+div.sss {
+    display: inline-block;
+    width: 35%;
+    height: 50px;
+    text-align: left;
+    font-style: italic;
+    margin-top: 12px;      /*  ?!? aici nu am pus vertical-align si - se comporta la fel ; trebuie pus sau nu ? */ 
+}  
+div.header_media {
+    display: inline-block;
+    width: 35%;
+    text-align: right;
+    height:50px;
+    margin-top: 12px;      /*  ?!? aici nu am pus vertical-align si - se comporta la fel ; trebuie pus sau nu ? */ 
+}
+/* white line */
+
+div.white_line {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    /*vertical-align: middle;  de ce nu merge ????  !!!-trebuie pus in elem pe care vrem sa il aliniem, nu in parinte*/
+    height: 65px;  
+}
+div.white_menu {
+    display: inline-block;
+    width: 45%;
+    height: 35px;
+    text-align: left;
+    vertical-align: middle;  /* ??? are rost sa il pun ???? */
+    margin-top: 19px;
+    font-weight: bold; 
+    color: black;
+}  
+div.white_search {
+    display: inline-block;
+    width: 25%;
+    text-align: right;
+    height:40px;
+    vertical-align: middle; /* ??? are rost sa il pun ???? */
+    margin-top: 17px; 
+}
+.white_menu > span {
+   border: 1px solid grey;
+   padding: 19.5px;
+   margin: 0;
+}
+span.search {
+    border: 2px solid grey;
+    width: 220px;
+    height: 40px;
+    padding: 5px 180px 5px 5px;
+    font-size: 1.15em;
+    border-radius: 4px;
+    box-shadow: -3px -3px 4px rgb(92, 90, 90);
+}
+span.go {
+    border: 2px solid green;
+    width: 60px;
+    height: 40px;
+    padding: 4px 15px 4px 15px;
+    font-size: 1.3em; 
+    background-color: green;
+    color: white;
+    border-radius: 8px;
+}
+/* xxxxxxxxxxxxxxxxx*/
+.wrapper {
+    /*background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c5/Moraine_Lake_17092005.jpg");*/
+    /*background-image: url('gravel.png');*/
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    /*height: 1710px; - !!! nu trebuie puse inaltimi la divuri - ca intra unul sub altul*/
+}
+.main {
+    width: 60%;
+    margin: 0 0;
+    /*background-color: white; */
+}
+div.gallery {
+    height: 50px;
+    text-align: left;
+    width: 100%;
+    margin: 0px 0;
+}
+/* &sdot;  ??? cum maresc punctul??? */
+.gallery > span {
+    display: inline-block;
+    margin-top: 12px;
+}
+div.border_principal_page {
+    width: 100%;
+    padding-bottom: 40px;
+    background-color:white;
+    border: 2px solid lightgrey;
+}
+/*div.principal_page {
+    width: 100%;
+    height: 950px;
+    background-color:white;
+    border: 2px solid lightgrey;
+} */
+
+div.first_line {
+    width: 100%;
+    height: 90px;
+    /*background-color: aqua; */
+    text-align: center;
+}
+div.viget {
+    display: inline-block;
+    margin-top: 20px;
+    vertical-align: middle;
+    width: 45%;
+    text-align: left;
+    line-height: 1.4em;
+    
+}
+div.visit_site {
+    display: inline-block;
+    margin-top: 15px;
+    vertical-align: middle;
+    width: 45%;
+    text-align: right;
+}
+span.viget {
+    font-size: 1.8em;
+    font-weight: bold; 
+}
+.viget span.date {
+    color: blue;
+    font-size:0.8em;
+}
+.visit_site span {
+   border: 1px solide blue;
+   background-color: blue;
+   color: white;
+   padding: 2px 8px;
+   font-size: 0.8em;
+}
+div.second_line {
+    text-align: justify;
+    width: 100%;
+    height: 30px;
+    color: rgb(71, 67, 67);
+    }
+div.logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25%;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 3px;
+}
+
+nav.menu {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    text-align: right;
+    margin-top: 3px;
+}
+/* xxxSearch- HOVER - xxx */
+.tooltip {
+    display: inline-block;
+    position: relative;
+}
+.tooltip_text {
+    position: absolute;
+    display: none;
+    text-align: left;
+    margin-left: -18px;
+}
+.second_line .tooltip:hover .tooltip_text {
+    display: block;
+    color: orange;
+}
+/* end Hover */
+
+.para-1 {
+    display: inline-block;  /* trebuie ??? */
+    font-size: 1.2em;
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 40px;
+    color: rgb(71, 67, 67);
+    font-weight: 100;
+}
+.principal_page img {
+    margin-top: 22px;
+}
+.para-2 {
+    font-size: 0.9em;
+    text-align: justify;
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-top: 20px;
+    color: rgb(71, 67, 67);
+    font-weight: 100;
+}
+.horizontalSeparator {
+    display: inline-block;
+    height: 0;
+    width: 82%;
+    margin-left: 9%;
+    margin-top: 15px;
+    border-top: 2px solid rgb(150, 143, 143);   
+}
+div.image {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 9%;
+}
+.author {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5%;
+    width:65%;
+}
+.author span p {
+    color: blue;
+    display: inline-block;
+}
+.GeneC .author .twiter {
+    background-color: lightgrey;
+    color: blue;
+    padding: 5px;
+    margin-top: 5px;
+}
+.author span {
+    display: inline-block;
+}
+.biography {
+    font-size: 0.9em;
+    margin-top: 20px;
+    color:rgb(71, 67, 67);
+}
+.blue {
+    color: blue;
+}
+/* xxx Comments xxx -first line */
+div.comments_sector {
+    width: 100%;
+    /*background-color: pink;*/
+    /*height: 80px; */
+    margin-top: 50px;
+    text-align: left;
+}
+div.o-comm {
+   display: inline-block;
+   width:17%;
+   }
+.unmatchedstyle {
+    display: inline-block;
+    width:66.5%;
+    }
+.login {
+    display: inline-block;
+    width: 15%;
+}
+div.comm_1st_line div.login span.one {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: -16px;
+}
+.login a {
+    color: blueviolet;
+    font-size: 1em;
+}
+.separator-com-1 {
+    display: inline-block;
+    height: 0;
+    width: 15%;
+    margin-top: -10px;
+    border-top: 3px solid black;
+    vertical-align: middle;
+}
+.separator-com-2 {
+    display: inline-block;
+    height: 0;
+    width: 85%;
+    margin-left: 0;
+    margin-top: -10px;
+    border-top: 2px solid grey;
+    vertical-align: middle;
+}
+/* xxx Comments xxx -second line */
+div.comm_2nd_line {
+    width: 100%;
+    text-align: justify;
+}
+div.align-left_comm-2 {
+    display: inline-block;
+    text-align: left;
+    width: 49%;
+}
+div.align-right_comm-2 {
+    display: inline-block;
+    text-align: right;
+    width: 49%;
+}
+div.align-left_comm-2 > div {
+    display: inline-block;
+}
+div.align-left_comm-2 .heart {
+    font-size: 0.9em;
+}
+.align-right_comm-2 a {
+    color: blueviolet;
+    font-size: 1em;
+}
+div.comm_tweet_1 {
+    font-size: 13px;
+    margin-top: -20px;
+    background: rgb(18, 120, 128);;
+    width: 50px;
+    height: 20px;
+    color:white;
+    border: 2px solid rgb(18, 120, 128);
+    border-radius: 3px;
+    padding: 0 5px;
+    text-align: center;
+    margin-left: 14px;
+}
+div.f_Share {
+    font-size: 13px;
+    margin-top: -20px;
+    background: rgb(79, 79, 165);
+    width: 50px;
+    height: 20px;
+    color:white;
+    border: 2px solid rgb(79, 79, 165);
+    border-radius: 3px;
+    padding: 0 5px;
+    text-align: center;
+    margin-left: 5px;
+}
+/* xxx Comments xxx - 3rd Line */
+
+.comm_3rd_line > span {
+    vertical-align: middle;
+}
+.discussion {
+    display: inline-block;
+    width: 92.1%;
+    height:32px;
+    border: 2px solid grey;
+    border-radius: 3px;
+    margin-top: 7px;
+    padding: 6px 0 0 6px;
+    background-color: white;
+}
+/* xxx Comments xxx - 4th Line */
+.log_in, .sign_up {
+    display: inline-block;
+}
+.log_in {
+    margin-left: 6.5%;
+}
+.sign_up {
+    margin-left: 1%;
+    width: 71%;
+}
+div.sign_up span.name {
+    display: inline-block;
+    width: 98.5%;
+    height:22px;
+    border: 2px solid grey;
+    border-radius: 3px;
+    background-color: white;
+    margin-top: 5px;
+    padding: 0 0 3px 5px;
+}
+/* xxxxxxxxxxxx */
+span.be-the-first {
+    display:inline-block;
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
+}
+.also {
+    display:inline-block;
+    width: 100%;
+    font-size:0.8em;
+    margin-top: 5%;
+}
+div.comment_columns {
+    width: 100%;
+}
+div.comment_columns > div {
+    display: inline-block;
+    width: 48%;
+    padding: 5px 4px 5px 0px;
+}
+div.paul {
+    margin-left: 9%;
+}
+span.separator-com-3 {
+    display: inline-block;
+    height: 0;
+    width: 100%;
+    margin-left: 0;
+    margin-top: -10px;
+    border-top: 2px solid grey;
+    vertical-align: middle;
+}
+.comm_last_line{
+    margin-top: -5px;
+}
+.comm_last_line > span {
+    font-size: 0.8em;
+}
+.space {
+    display:inline-block;
+    width: 37%;
+}
+
+/* xxxx ASIDE xxxx */
+aside {
+    width: 37%;
+    height: 500px;
+    /*background-color: pink; */
+    margin-top: 50px;
+}
+.aside_top_line {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.amazing {
+    font-size: 0.8em;
+    margin-left: 11px;
+    width: 30%;
+}
+.ads {
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+div.colors {
+    color: blue;
+    font-weight: 500;
+    margin-top: 15px;
+}
+div.colors_tabs span {
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    padding: 0;
+}
+span.black {
+    background-color: black;
+}
+span.dark {
+    background-color: rgb(39, 37, 37);
+}
+span.grey {
+    background-color: grey;
+}
+span.white {
+    background-color: rgb(212, 202, 202);
+}
+div.tags {
+    color: blue;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.aside_tags1 span {
+    display: inline-block;
+    font-style: italic;
+    background-color: lightgrey;
+    color: black;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+span.separator-1 {
+    display: inline-block;
+    vertical-align: middle;
+    height: 0;
+    width: 45%;
+    margin-left: -1px;
+    margin-top: -20px;
+    border-top: 2px solid grey;
+    z-index: 2;
+      
+}
+span.separator-2 {
+    display: inline-block;
+    height: 0;
+    width: 45%;
+    margin-left: -5px;
+    margin-top: -20px;
+    border-top: 2px solid grey;
+    z-index: 2;  
+    vertical-align: middle;
+}
+.separator_line i {
+    position: relative; 
+}
+.zero {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: -25px;
+    font-size:0.9em;
+}
+div.comments i {
+    display: inline-block;
+    vertical-align:top;
+}
+.align_comments {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+div.save {
+    margin-left: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 2px;
+}
+div.Tweet {
+    font-size: 13px;
+    margin-top: -20px;
+    background: rgb(185, 195, 201);
+    width: 50px;
+    height: 20px;
+    color: blue;
+    border: 2px solid rgb(79, 79, 165);
+    border-radius: 5px;
+}
+div.plus_one {
+    font-size: 13px;
+    margin-top: -30px;
+    background: rgb(185, 195, 201);
+    width: 35px;
+    height: 20px;
+    color: blue;
+    border: 2px solid rgb(79, 79, 165);
+    border-radius: 5px;
+    text-align: center;
+}
+.f_like {
+    font-size: 13px;
+    margin-top: -25px;
+    background: rgb(185, 195, 201);
+    width: 36px;
+    height: 20px;
+    color: blue;
+    border: 2px solid rgb(79, 79, 165);
+    border-radius: 5px;
+    text-align: center;
+}
+div.align_boxes {
+    display: flex;
+    justify-content: flex-start;
+}
+span.separator-0 {
+    display: inline-block;
+    height: 0;
+    width: 100%;
+    margin-top: 15px;
+    border-top: 2px solid grey;
+    vertical-align: middle;
+}
+span.separator-3 {
+    display: inline-block;
+    height: 0;
+    width: 100%;
+    margin-top: -25px;
+    border-top: 2px solid grey;
+    
+    vertical-align: middle;
+}
+/* xxx COMMERCIALS xxx */
+div.commercials_background {
+    display: inline-block;
+    width: 100%;
+    /*height: 165px; !!! nu trebuie puse inaltimi la div*/
+    background-color: lightgreen;
+    margin-top: 20px;
+    
+}
+div.commercials {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin-left: 16%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+div.commercials img {
+    padding-right: 15px;
+}
+
+/* xxx FOOTER xxx */
+footer {
+    display: inline-block;
+    width: 100%;
+    background-color: black;
+}
+.footer_container {
+    text-align: left;
+    margin-left: 15%;
+}
+div.footer_left > i {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: white;
+}
+.footer_container div {
+    display: inline-block;
+    vertical-align: top;
+}
+.footer_left {
+    display: inline-block;
+    width: 20%;
+    margin-top: 10px;
+}
+.footer_center {
+    display: inline-block;
+    width: 30%;
+    margin-top: 50px;
+    text-align: left;
+}
+.email_address {
+    width:100%;
+    margin-top: 15px;
+}
+.footer_center .email_address .email{
+    display: inline-block;
+    width: 60%;
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 2px;
+    background-color: white;
+    color: black;
+    font-size: 0.8em;
+    padding-top: 3px;
+    text-align: left;
+    vertical-align: middle;
+}
+span.go-1 {
+    border: 2px solid rgb(26, 110, 136);
+    width: 20px;
+    height: 20px;
+    padding: 4px 8px 4px 8px;
+    font-size: 0.9em; 
+    background-color: rgb(26, 110, 136);
+    color: white;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+.signup {
+    margin-top: 10px;
+}
+div.footer_right {
+    display: inline-block;
+    margin-top: 25px;
+}
+.April {
+   margin-top: 25px;
+}
