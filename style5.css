@@ -21,14 +21,14 @@ div.sss {
     height: 50px;
     text-align: left;
     font-style: italic;
-    margin-top: 12px;      /*  ?!? aici nu am pus vertical-align si - se comporta la fel ; trebuie pus sau nu ? */ 
+    margin-top: 12px;      
 }  
 div.header_media {
     display: inline-block;
     width: 35%;
     text-align: right;
     height:50px;
-    margin-top: 12px;      /*  ?!? aici nu am pus vertical-align si - se comporta la fel ; trebuie pus sau nu ? */ 
+    margin-top: 12px;      
 }
 /* white line */
 
@@ -36,7 +36,6 @@ div.white_line {
     background-color: white;
     width: 100%;
     text-align: center;
-    /*vertical-align: middle;  de ce nu merge ????  !!!-trebuie pus in elem pe care vrem sa il aliniem, nu in parinte*/
     height: 65px;  
 }
 div.white_menu {
@@ -44,7 +43,7 @@ div.white_menu {
     width: 45%;
     height: 35px;
     text-align: left;
-    vertical-align: middle;  /* ??? are rost sa il pun ???? */
+    vertical-align: middle;  
     margin-top: 19px;
     font-weight: bold; 
     color: black;
@@ -54,7 +53,7 @@ div.white_search {
     width: 25%;
     text-align: right;
     height:40px;
-    vertical-align: middle; /* ??? are rost sa il pun ???? */
+    vertical-align: middle; 
     margin-top: 17px; 
 }
 .white_menu > span {
@@ -102,7 +101,7 @@ div.gallery {
     width: 100%;
     margin: 0px 0;
 }
-/* &sdot;  ??? cum maresc punctul??? */
+
 .gallery > span {
     display: inline-block;
     margin-top: 12px;
@@ -113,17 +112,10 @@ div.border_principal_page {
     background-color:white;
     border: 2px solid lightgrey;
 }
-/*div.principal_page {
-    width: 100%;
-    height: 950px;
-    background-color:white;
-    border: 2px solid lightgrey;
-} */
 
 div.first_line {
     width: 100%;
     height: 90px;
-    /*background-color: aqua; */
     text-align: center;
 }
 div.viget {
@@ -179,7 +171,7 @@ nav.menu {
     text-align: right;
     margin-top: 3px;
 }
-/* xxxSearch- HOVER - xxx */
+
 .tooltip {
     display: inline-block;
     position: relative;
@@ -197,7 +189,7 @@ nav.menu {
 /* end Hover */
 
 .para-1 {
-    display: inline-block;  /* trebuie ??? */
+    display: inline-block; 
     font-size: 1.2em;
     text-align: justify;
     margin-left: 15%;
@@ -261,8 +253,6 @@ div.image {
 /* xxx Comments xxx -first line */
 div.comments_sector {
     width: 100%;
-    /*background-color: pink;*/
-    /*height: 80px; */
     margin-top: 50px;
     text-align: left;
 }
@@ -595,7 +585,6 @@ span.separator-3 {
 div.commercials_background {
     display: inline-block;
     width: 100%;
-    /*height: 165px; !!! nu trebuie puse inaltimi la div*/
     background-color: lightgreen;
     margin-top: 20px;
     
